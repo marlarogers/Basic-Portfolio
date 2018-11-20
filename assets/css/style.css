@@ -18,7 +18,7 @@ section {
     border-style: solid;
     text-overflow: clip;
     font-family: lucida grande;
-    font-color: #666666;
+    color: #666666;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 10px;
@@ -34,6 +34,7 @@ section {
         height: 80px;
         width: 150%;
         position: fixed;
+        z-index: 1;
         left: 0;
         right: 0;
 }
@@ -42,24 +43,27 @@ header {
     background: #4aaaa5;
     font-family: georgia;
     font-size: 40px;
-    font-color: "white";
+    color: white;
     position: fixed;
-    margin-top:35px;
-    margin-left: 108px;
+    margin-top:40px;
+    margin-left: 100px;
 }
 
 a:link {
     color: #666666;
     text-decoration: none;
 }
+
 a:visited {
     color: #666666;
     text-decoration: none;
 }
+
 a:hover {
     color: #4aaaa5;
     text-decoration: none;
 }
+
 a:active {
     color: #666666;
     text-decoration: none;
@@ -69,19 +73,34 @@ a:active {
     font-family: arial;
     color: 666666;
     text-decoration: none;
-    margin-right: 50px;
-    right: 0;
+    padding-left: 960px;
+    padding-top: 40px;
 }
-
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
   
 .img1 {
     float:left;
     margin-right: 15px;
+}
+
+.container {
+    position: relative;
+    text-align: justify;
+    color: white;
+}
+
+.img01 {
+    border: none;
+    position: relative;
+    float: left;
+}
+
+.text {
+    color: white;
+    background-color: #4aaaa5;
+    font-family: georgia;
+    display: inline;
+    width: 400px;
+    position: relative;
 }
 
 .footer {
@@ -95,7 +114,7 @@ a:active {
 }
 
 .footer1 {
-    font-color: white;
+    color: white;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-left:400px;
